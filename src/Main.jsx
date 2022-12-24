@@ -1,7 +1,6 @@
 import React from "react"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { LandingPage, DetailProducts, Add, Edit, Delete } from "./pages"
-// import ProductItems from "./components/Constants/ProductItems"
 
 const router = createBrowserRouter([
 	{
@@ -11,18 +10,6 @@ const router = createBrowserRouter([
 	{
 		path: "/:id",
 		element: <DetailProducts />,
-	},
-	{
-		path: "/Add",
-		element: <Add/>,
-	},
-	{
-		path: "/Edit/:id",
-		element: <Edit/>,
-	},
-	{
-		path: "/Delete",
-		element: <Delete/>,
 	},
 ])
 
